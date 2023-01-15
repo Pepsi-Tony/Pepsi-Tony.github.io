@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link rel="stylesheet" type="text/css" href="group.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Home Page</title>
 </head>
-<body>
-	<p>Tony</p>
+<body id="bb11">
+	
+	<script src="group.js" defer></script>
+
+	<br><br>
+	<h1 id="h1">Sport</h1>
+
+  	<canvas id="canvas"></canvas>
+	<ul class="main">
+		<li class="li1">
+			<a href="Basketball.html"><img src="image1.jpg" alt="" width="840px" height="540px"></a>
+			<div class="flag">Basketball</div>
+		</li>
+		<li class="li1">
+			<a href="Football.html"><img src="image2.jpg" alt="" width="840px" height="540px"></a>
+			<div class="flag">Football</div>
+		</li>
+		<li class="li1">
+			<a href="Billiards.html"><img src="image3.jpg" alt="" width="840px" height="540px"></a>
+			<div class="flag">Billiard</div>
+		</li>
+		<li class="li1">
+			<a href="Tennis.html"><img src="image4.jpg" alt="" width="840px" height="540px"></a>
+			<div class="flag">Tennis</div>
+		</li>
+		<li class="li1">
+			<a href="Ping Pong.html"><img src="image5.jpg" alt="" width="840px" height="540px"></a>
+			<div class="flag">Ping Pong</div>
+		</li>
+	</ul>
+	<br><br><hr>
+	<div>
+		<h1>NEWS</h1>
+	</div>
+
+	<div class="container">
+        <input type="radio" name="select" id="slide_1" checked hidden>
+        <input type="radio" name="select" id="slide_2" hidden>
+        <input type="radio" name="select" id="slide_3" hidden>
+        <input type="radio" name="select" id="slide_4" hidden>
+        <input type="radio" name="select" id="slide_5" hidden>
+
+        <div class="slider">
+            <label for="slide_1" class="slide slide-1"></label>
+            <label for="slide_2" class="slide slide-2"></label>
+            <label for="slide_3" class="slide slide-3"></label>
+            <label for="slide_4" class="slide slide-4"></label>
+            <label for="slide_5" class="slide slide-5"></label>
+        </div>
+
+        <div class="card card-1">
+            <div class="img">
+                <img src="1.jpg" alt="123">
+            </div>
+            <div class="content">
+                <div class="title"><h1>Basketball</h1></div>
+                <div class="text"><h4>In 2022, Golden State Warriors won the NBA championship</h4></div>
+                <a class="details" href="https://www.latinosports.com/golden-state-warriors-win-2022-nba-championship-4th-title-in-last-8-years/">View Details</a>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="img">
+                <img src="2.jpg" alt="123">
+            </div>
+            <div class="content">
+                <div class="title"><h1>Football</h1></div>
+                <div class="text"><h4>Congratulations to Argentina on winning the Qatar World Cup championship</h4></div>
+                <a class="details" href="https://www.fifa.com/fifaplus/en/watch/ED9jAzVEUUyK5FxJUoqDWA">View Details</a>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="img">
+                <img src="3.jpg" alt="123">
+            </div>
+            <div class="content">
+                <div class="title"><h1>Billiards</h1></div>
+                <div class="text"><h4>Ronnie O'Sullivan won 2022 World Snooker Championship</h4></div>
+                <a class="details" href="https://www.sportingnews.com/ca/snooker/news/2022-world-snooker-championship-full-draw-32-player-crucible-bracket-and-results/nkshe7nqouhleveplyggh57h">View Details</a>
+            </div>
+        </div>
+        <div class="card card-4">
+            <div class="img">
+                <img src="4.jpg" alt="123">
+            </div>
+            <div class="content">
+                <div class="title"><h1>Tennis</h1></div>
+                <div class="text"><h4>Novak Djokovic won six consecutive Grand Slams in 2022</h4></div>
+                <a class="details" href="http://www.worldtennismagazine.com/archives/tag/novak-djokovic">View Details</a>
+            </div>
+        </div>
+        <div class="card card-5">
+            <div class="img">
+                <img src="5.jpg" alt="123">
+            </div>
+            <div class="content">
+                <div class="title"><h1>Table Tennis</h1></div>
+                <div class="text"><h4>Wang Chuqin finally defeated Japan to win the World Table Tennis Championships</h4></div>
+                <a class="details" href="https://www.hangzhou2022.cn/En/presscenter/globalevents/202210/t20221031_53252.shtml">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><hr><br>
+
+	<center>
+
+		<p class='link' id="queslink" onclick="ques()" onmouseover="quesm()" onmouseout="quesm1()">User Experience Improvement Questionnaire</p>
+
+		<div id="submit">
+			<h1 id="Questionnaire">User Experience Improvement Questionnaire</h1><br>
+
+			<form class="center" action="abc.php">
+				<label class="q1" name="username">Username: </label>
+				<input class="q2" type="text" name="username" placeholder="username"><br><br><br>
+
+				<label class="q1" name="password">Password: </label>
+				<input class="q2" type="text" name="password" placeholder="password"><br><br><br>
+				
+				<label class="q1" name="dob">Birthday: </label>
+				<input class="q2" type="date" name="dob"><br><br><br>
+						
+				<label class="q1" name="email">Email: </label>
+				<input class="q2" type="email" name="email" placeholder="email"><br><br><br>
+
+				<label class="q1" name="gender">Gender: </label>
+				<input class="q3" type="radio" name="gender">
+				<label class="q1" name="male">Male</label>
+				<input class="q3" type="radio" name="gender">
+				<label class="q1" name="female">Female</label><br><br><br>
+
+
+				<label class="q1" name="color">Choose Your Favorite Color:</label>
+				<input class="q2" type="color" name="color"><br><br><br>
+
+				<label class="q1" name="sports">Favorite Sports: </label>
+				<select class="q2" >
+					<option value="select">Please choose</option>
+					<option value="Basketball">Basketball</option>
+					<option value="Football">Football</option>
+					<option value="Tennis">Tennis</option>
+					<option value="Ping Pong">Ping Pong</option>
+					<option value="Billiards">Billiards</option>
+				</select><br><br><br><br>
+
+				<label class="q1" >Your Other Favorite Sports:</label><br><br><br>
+				<textarea class="q2" rows="2" cols="30">List your favorite sports</textarea><br><br><br>
+
+				<label class="q1" >Comments (your suggestions to our website)</label><br><br><br>
+				<textarea class="q2" rows="10" cols="80">Please leave comments</textarea><br><br><br><br><br>
+
+				<label class="q1" name="file">Upload a file for your Comments: </label><br><br>
+				<input class="q2" type="file" name="file"><br><br><br><br><br>
+
+				<input class="q2" type="reset">
+			</form><br><br>
+
+			<button class="q2" onclick="submitq()">submit</button><br><br>
+		</div>
+		<p id="aftersb"></p>
+	</center>
+	<br><br><br>
+
+	<p style="color: black;">end</p>
+
+
+	<div id='footer'><hr><br><br><br>
+		<center>
+			<div id="shareicons">
+				<a href="https://accounts.google.com/signin/v2/identifier?service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+					<img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email"/>
+				</a>
+				<a href="https://www.facebook.com/login/" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+				</a>
+				<a href="https://www.google.com/" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/google.png"   alt="Google" />
+				</a>
+				<a href="https://in.linkedin.com/" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+				</a>
+				<a href="https://in.pinterest.com/">
+					<img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+				</a>
+				<a href="javascript:;" onclick="window.print()">
+					<img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+				</a>
+				<a href="https://twitter.com/login?lang=en" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter"/>
+				</a>
+			</div><br><br>
+
+			<p style="color: whitesmoke;">footer</p>
+
+			<div id="div12345">
+				<div id="divfooterl">
+					<p id="ff1" onmouseover="cff1()" onmouseout="cfb1()">Contact us</p>
+				</div>
+				<div id="divfooterm">
+					<p id="ff2" onmouseover="cff2()" onmouseout="cfb2()">Our Services</p>
+				</div>
+				<div id="divfooterm">
+					<p id="ff3" onmouseover="cff3()" onmouseout="cfb3()">Pravicy Policy</p>
+				</div>
+				<div id="divfooterm">
+					<p id="ff4" onmouseover="cff4()" onmouseout="cfb4()">Terms & Conditions</p>
+				</div>
+				<div id="divfooterm">
+					<p id="ff5" onmouseover="cff5()" onmouseout="cfb5()">Career</p>
+				</div>
+			</div><br><br><br><br><br>
+			
+			<button onclick="gotop()" id="b1" title="Go to top">Back To Top</button>
+
+			<footer>
+				<h4 style="background-color:darkgray;">All rights reserved @123456789 || Designed by: Tony, Frank, Steven</h4>
+			</footer>
+		</center>
+	</div>
+
 </body>
 </html>
