@@ -536,7 +536,7 @@ function handleParticle() {
 }
 
 function draw() {
-    ctx.clearRect(1, 1, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (particlesArray.length < count) {
         createParticle();
     }
